@@ -1,11 +1,13 @@
 import datetime
 from dataclasses import dataclass
 from enum import StrEnum
-from typing import List
-from typing import Optional
+from typing import List, Optional
 
 
-"""These classes are the base models"""
+"""
+These classes FileTypes, Author, License,Tag, ConnectionTypes,  Source, 
+Doi, Project, File, ProjectWithFiles are the base models
+"""
 
 
 @dataclass()
@@ -57,6 +59,7 @@ class ConnectionTypes(StrEnum):
 class Connection:
     url: str
     connection_type: ConnectionTypes
+
 
 @dataclass
 class Source:
